@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Christoph Gärtner — Engagement in Hamburg-Eimsbüttel</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,500&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#1B2B3A;
+    --paper:#EEF1EF;
+    --brick:#B5482C;
+    --brass:#C9A227;
+    --slate:#5C6B73;
+    --line: rgba(27,43,58,0.15);
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  html{scroll-behavior:smooth;}
+  body{
+    background:var(--paper);
+    color:var(--ink);
+    font-family:'Source Sans 3', sans-serif;
+    line-height:1.6;
+  }
+  h1,h2,h3{ font-family:'Fraunces', serif; font-weight:600; line-height:1.1; }
+  a{ color:var(--brick); }
+  .wrap{ max-width:780px; margin:0 auto; padding:0 24px; }
+
+  /* Header */
+  header{
+    padding:90px 0 60px;
+    border-bottom:1px solid var(--line);
+    position:relative;
+    overflow:hidden;
+  }
+  .eyebrow{
+    font-size:13px; letter-spacing:.14em; text-transform:uppercase;
+    color:var(--slate); margin-bottom:18px;
+  }
+  header h1{
+    font-size:clamp(38px, 6vw, 60px);
+    max-width:11ch;
+  }
+  header .role{
+    margin-top:18px; font-size:18px; color:var(--slate); max-width:46ch;
+  }
+  .skyline{
+    position:absolute; right:-40px; bottom:-10px; width:340px; opacity:.55;
+  }
+
+  /* Nav */
+  nav{
+    position:sticky; top:0; background:var(--paper);
+    border-bottom:1px solid var(--line); z-index:10;
+  }
+  nav .wrap{ display:flex; gap:28px; padding:14px 24px; font-size:14px; }
+  nav a{ color:var(--ink); text-decoration:none; letter-spacing:.02em; }
+  nav a:hover{ color:var(--brick); }
+
+  section{ padding:64px 0; border-bottom:1px solid var(--line); }
+  section h2{
+    font-size:26px; margin-bottom:26px;
+    display:flex; align-items:baseline; gap:14px;
+  }
+  section h2::before{
+    content:attr(data-mark);
+    font-family:'Source Sans 3', sans-serif; font-weight:700; font-size:13px;
+    color:var(--brass); letter-spacing:.12em;
+  }
+  .about p{ max-width:62ch; margin-bottom:16px; color:#28394A; }
+
+  /* Activities — logged like harbor entries */
+  .log-entry{
+    display:grid; grid-template-columns:110px 1fr; gap:20px;
+    padding:18px 0; border-top:1px dashed var(--line);
+  }
+  .log-entry:first-of-type{ border-top:none; }
+  .log-date{ font-size:13px; color:var(--slate); letter-spacing:.04em; padding-top:3px; }
+  .log-body h3{ font-size:18px; margin-bottom:6px; font-weight:600; }
+  .log-body p{ color:#28394A; font-size:15px; }
+  .tag{
+    display:inline-block; font-size:11px; letter-spacing:.06em; text-transform:uppercase;
+    color:var(--brick); border:1px solid var(--brick); border-radius:2px;
+    padding:2px 7px; margin-top:8px;
+  }
+
+  /* Contact */
+  .contact-card{
+    background:var(--ink); color:var(--paper);
+    padding:40px; border-radius:2px; margin-top:8px;
+  }
+  .contact-card h3{ color:var(--paper); font-size:20px; margin-bottom:14px; }
+  .contact-card a{ color:var(--brass); }
+  .contact-list{ list-style:none; display:flex; flex-direction:column; gap:8px; font-size:15px; }
+
+  footer{ padding:36px 0; text-align:center; font-size:13px; color:var(--slate); }
+
+  @media (max-width:600px){
+    .log-entry{ grid-template-columns:1fr; gap:4px; }
+    .skyline{ display:none; }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <a href="#about">Über mich</a>
+    <a href="#activities">Vor Ort</a>
+    <a href="#contact">Kontakt</a>
+  </div>
+</nav>
+
+<header>
+  <div class="wrap">
+    <div class="eyebrow">FDP Hamburg-Eimsbüttel · Ehrenamtliches Engagement</div>
+    <h1>Christoph Gärtner</h1>
+    <p class="role">Mitglied der FDP Bezirksfraktion Eimsbüttel · Zubenannter Bürger im Ausschuss Mobilität · Stellv. Kreisvorsitzender FDP Kreisverband Harvestehude-Eimsbüttel (KV31)</p>
+  </div>
+  <svg class="skyline" viewBox="0 0 400 120" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="var(--ink)" stroke-width="2">
+    <path d="M0 110 L20 110 L20 70 L30 70 L30 110 L60 110 L60 50 L64 40 L68 50 L68 110 L100 110 L100 60 L110 60 L110 40 L120 40 L120 60 L130 60 L130 110 L170 110 L170 20 L178 10 L186 20 L186 110 L230 110 L230 65 L240 65 L240 110 L280 110 L280 55 L290 45 L300 55 L300 110 L340 110 L340 75 L350 75 L350 110 L400 110" />
+  </svg>
+</header>
+
+<section id="about" class="about">
+  <div class="wrap">
+    <h2 data-mark="01">Über mich</h2>
+    <p>Ich setze mich für die Anliegen der Menschen in Eimsbüttel ein, mit besonderem Augenmerk auf eine funktionierende Mobilität für alle in unserem Bezirk, denn Mobilität ist Teilhabe, Wirtschaftstreiber und Freiheit. Das tue ich durch parteipolitisches Engagement, als Beisitzer in der FDP Fraktion Hamburg-Eimsbüttel sowie als stellvertretender Vorsitzender des Kreisverbands Harvestehude-Eimsbüttel (KV31).</p>
+    <p>Meine Themen: Wir können es alle besser, wenn wir mit gesundem Menschenverstand an die Dinge herangehen und unsere Mitbürger wie Erwachsene behandeln. Basierend auf einem positiven Menschenbild meine ich, wir brauchen keinen großen, teuren, schwerfälligen Staat, der Bürger bevormundet und Leistungsträger ausbremst. Wir setzen auf Freiheit und Eigenverantwortung, eine wirtschaftspolitisch fundierte Debattenkultur und nachhaltiges Haushalten, wie es auch die berühmte schwäbische Hausfrau täte. Ich bin überzeugt: Demokratie braucht Streit — Mitdenken ist gut, die eigene Meinung beitragen ist nötig, den Experten zuhören ist Pflicht, und dann Schlüsse folgern. Nicht Reichtum ist das Problem, sondern Armut, die gilt es zu bekämpfen. Wenn jeder sein persönlich Bestes gibt, wird es allen besser gehen.</p>
+    <p>Hauptberuflich bin ich im IT/TK-Infrastrukturvertrieb und Großprojektgeschäft eines Großkonzerns tätig, mit Schwerpunkt Presales-Teams orchestrieren und Dealsteuerung. Daneben bin ich Hobby-Ökonom mit Ambition, der weder an free lunches noch an Märchen glaubt. Und Optimist bleibt.</p>
+  </div>
+</section>
+
+<section id="activities">
+  <div class="wrap">
+    <h2 data-mark="02">Aktivitäten vor Ort</h2>
+
+    <div class="log-entry">
+      <div class="log-date">Laufend</div>
+      <div class="log-body">
+        <h3>Ausschuss Mobilität</h3>
+        <p>Als zubenannter Bürger bringe ich mich in die Mobilitätspolitik für Eimsbüttel ein — mit dem Ziel, den Bezirk für alle Verkehrsteilnehmer besser funktionieren zu lassen.</p>
+        <span class="tag">Bezirksversammlung</span>
+      </div>
+    </div>
+
+    <div class="log-entry">
+      <div class="log-date">Laufend</div>
+      <div class="log-body">
+        <h3>Kreisvorstand KV31</h3>
+        <p>Als stellvertretender Kreisvorsitzender des FDP Kreisverbands Harvestehude-Eimsbüttel unterstütze ich die Verbandsarbeit und den Austausch mit den Mitgliedern vor Ort.</p>
+        <span class="tag">FDP-Kreisverband Harvestehude-Eimsbüttel</span>
+      </div>
+    </div>
+
+    <div class="log-entry">
+      <div class="log-date">Laufend</div>
+      <div class="log-body">
+        <h3>Wirtschafts- und Finanzthemen</h3>
+        <p>Mit meinem beruflichen Hintergrund in Vertrieb, Großprojekten und Finanzierung bringe ich ökonomischen Sachverstand in die politische Debatte ein.</p>
+        <span class="tag">FDP-Fraktion Hamburg-Eimsbüttel</span>
+      </div>
+    </div>
+
+    <div class="log-entry">
+      <div class="log-date">Verbände</div>
+      <div class="log-body">
+        <h3>FDP vor Ort</h3>
+        <ul class="contact-list" style="color:#28394A;">
+          <li>FDP Bezirksverband Eimsbüttel: <a href="https://www.facebook.com/fdp.eimsbuettel" target="_blank" rel="noopener">facebook.com/fdp.eimsbuettel</a></li>
+          <li>FDP Kreisverband Harvestehude-Eimsbüttel: <a href="https://www.facebook.com/FdpHarvestehude" target="_blank" rel="noopener">facebook.com/FdpHarvestehude</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="log-entry">
+      <div class="log-date">Bezirk</div>
+      <div class="log-body">
+        <h3>Bezirk Eimsbüttel</h3>
+        <ul class="contact-list" style="color:#28394A;">
+          <li>Bezirk Eimsbüttel: <a href="https://www.hamburg.de/leben-in-hamburg/bezirke-hamburg/bezirk-eimsbuettel-372784" target="_blank" rel="noopener">hamburg.de/bezirk-eimsbuettel</a></li>
+          <li>Bezirksamt Eimsbüttel bei Hamburg Seiten: <a href="https://bv-hh.de/eimsbuettel" target="_blank" rel="noopener">bv-hh.de/eimsbuettel</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <h2 data-mark="03">Kontakt</h2>
+    <div class="contact-card">
+      <h3>Mitmachen oder in Kontakt treten</h3>
+      <ul class="contact-list">
+        <li>E-Mail: <a href="mailto:christoph.gaertner@fdp-fraktion-eimsbuettel.de">christoph.gaertner@fdp-fraktion-eimsbuettel.de</a></li>
+        <li>LinkedIn: <a href="https://www.linkedin.com/in/christoph-g%C3%A4rtner-bb9183/" target="_blank" rel="noopener">Christoph Gärtner</a></li>
+      </ul>
+      <h3 style="margin-top:26px;">Nützliche Quellen</h3>
+      <ul class="contact-list">
+        <li>Bezirksamt Eimsbüttel — Ratsinformationssystem (Allris): <a href="https://sitzungsdienst-eimsbuettel.hamburg.de/bi/allris.net.asp" target="_blank" rel="noopener">sitzungsdienst-eimsbuettel.hamburg.de</a></li>
+        <li>Bezirksamt Eimsbüttel — LinkedIn: <a href="https://www.linkedin.com/company/bezirksamt-eimsb%C3%BCttel/?originalSubdomain=de" target="_blank" rel="noopener">LinkedIn</a></li>
+        <li>Bezirksamt Eimsbüttel — Instagram: <a href="https://www.instagram.com/bezirksamt.eimsbuettel/?hl=de" target="_blank" rel="noopener">Instagram</a></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    Christoph Gärtner · Hamburg-Eimsbüttel · 2026 · Privates Engagement, keine offizielle Parteiseite
+  </div>
+</footer>
+
+</body>
+</html>
